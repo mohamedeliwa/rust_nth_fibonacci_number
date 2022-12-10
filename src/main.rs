@@ -12,14 +12,13 @@ fn main() {
             .read_line(&mut position)
             .expect("Can't read your input");
 
-        let position: u32 = match position.trim().parse() {
+        break match position.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 println!("Pleave input a positive number");
                 continue;
             }
         };
-        break position;
     };
 
     let value: u64 = nth_fibonacci_value(position);
