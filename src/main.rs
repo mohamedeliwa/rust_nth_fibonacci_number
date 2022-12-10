@@ -28,6 +28,8 @@ fn main() {
     )
 }
 
+// getting the nth fibonacci number using recursion
+// it's not the best way, but good enough for this program
 fn nth_fibonacci_value(n: u32) -> u64 {
     match n {
         0 => 0,
